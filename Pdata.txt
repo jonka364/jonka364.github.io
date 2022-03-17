@@ -1,0 +1,14 @@
+Singularity	Puiseux char	Milnor form
+
+A_(2n+1)	(2n+1; 2)	nh + <4(n+1)>
+A_2n		(n; 1)		nh
+D_(2n+1)	
+D_2n
+E6		(4; 3)		3h
+E7		
+E8		(5; 3)		4h
+E12
+Z11
+Q10
+E13
+Z12
