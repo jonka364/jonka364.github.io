@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text + Image Blocks</title>
+
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      max-width: 900px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>
+    All images below are variants of the system described in <a href="https://oeis.org/A392177">A392177</a>. A number of players take turns placing their chess pieces on an infinite board, following a square spiral and preferring the lowest index along the spiral. No piece must be threatened by a piece belonging to another player. Players are encoded by colors.  
+  </p>
+  <p>
+    The players may or may not use the same kind of piece. If they do not, it matters who plays first. Below, players and their pieces are listed in order.
+  </p>
+  <p>
+    The more standard non-standard pieces have well-established names: fers, vazir, alfil. At some point I stopped bothering and assigned my own names, as follows:
+    <table>
+  <tr>
+    <td>Knight</td>
+    <td>(2, 1)</td>
+  </tr>
+  <tr>
+    <td>Fers</td>
+    <td>(1, 1)</td>
+  </tr>
+  <tr>
+    <td>Vazir</td>
+    <td>(1, 0)</td>
+  </tr>
+  <tr>
+    <td>Camel</td>
+    <td>(3, 1)</td>
+  </tr>
+  <tr>
+    <td>Zebra</td>
+    <td>(3, 2)</td>
+  </tr>
+  <tr>
+    <td>Antelope</td>
+    <td>(4, 3)</td>
+  </tr>
+  <tr>
+    <td>Eland</td>
+    <td>(5, 3)</td>
+  </tr>
+  <tr>
+    <td>Satrap</td>
+    <td>(2, 0)</td>
+  </tr>
+  <tr>
+    <td>Aspbad</td>
+    <td>(2, 2)</td>
+  </tr>
+  <tr>
+    <td>Spehbed</td>
+    <td>(3, 0)</td>
+  </tr>
+  <tr>
+    <td>Marzban</td>
+    <td>(3, 3)</td>
+  </tr>
+</table>
+
+  </p>
+  <section>
+    <p>
+      Black aspbad, orange spehbed. They are not out of focus; the blur is caused by how the colors mix.
+    </p>
+    <div class="gallery">
+      <img src="black_aspbad_orange_spehbed_N = 32000.png">
+      <img src="black_aspbad_orange_spehbed_N = 320000.png">
+      <img src="black_aspbad_orange_spehbed_N = 3200000.png">
+    </div>
+  </section>
+
+  <section>
+    <p>
+      Black knight, cyan antelope.
+    </p>
+    <div class="gallery">
+      <img src="black_knight_cyan_antelope_N = 32000.png">
+      <img src="black_knight_cyan_antelope_N = 320000.png">
+      <img src="black_knight_cyan_antelope_N = 3200000.png">
+    </div>
+  </section>
+
+
+  <section>
+    <p>
+      Black knight, red eland, cyan vazir. Knight threatens everyone, eland threatens only vazir, vazir threatens only knight.
+    </p>
+
+    <div class="gallery">
+      <img src="knight_eland_vazir_N = 32000_selective_enmity.png">
+      <img src="knight_eland_vazir_N = 320000_selective_enmity.png">
+      <img src="knight_eland_vazir_N = 3200000_selective_enmity.png">
+    </div>
+  </section>
+
+</body>
+</html>
